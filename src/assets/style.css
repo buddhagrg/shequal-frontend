@@ -1,0 +1,11 @@
+:root {
+    --black-color: #232837;
+}
+
+.nav-container {
+    background-color: var(--black-color)
+}
+
+.nav-container a {
+    color: white;
+}
