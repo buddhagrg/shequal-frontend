@@ -1,17 +1,22 @@
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
+import { Link } from "react-router-dom"
 
 const Header = () => {
     return (
         <Navbar className="nav-container">
             <Container>
-                <Navbar.Brand href="#home">Shequal Jobs</Navbar.Brand>
+                <Navbar.Brand>
+                    <Link to={"/"}>Shequal Jobs</Link>
+                </Navbar.Brand>
                 <Nav className="justify-content-end">
-                    <Button
-                        type="button"
-                        size="sm"
-                        variant="primary"
-                        className=""
-                    >POST A JOB</Button>
+                    <Link to={"/postjob"}>
+                        <Button
+                            type="button"
+                            size="sm"
+                            variant="primary"
+                            className="post-job-btn"
+                        >POST A JOB</Button>
+                    </Link>
                 </Nav>
             </Container>
         </Navbar>

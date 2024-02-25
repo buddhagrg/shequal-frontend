@@ -1,5 +1,9 @@
 :root {
     --black-color: #232837;
+    --border-color: #dbdbdb;
+    --light-black-color: #858b9a;
+    --link-color: #4e64b7;
+    --link-color-hovered: #3a4f9e;
 }
 
 .nav-container {
@@ -7,5 +11,66 @@
 }
 
 .nav-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-container {
+    background-color: var(--black-color);
+    padding: 100px 0px;
+    text-align: center;
+}
+
+.hero-text {
+    color: white;
+    margin-bottom: 70px;
+}
+
+.search-container-root {
+    border: 1px solid red;
+}
+
+.search-container {
+    padding: 15px 0px;
+    justify-content: center;
+}
+
+.job-card {
+    border: 1px solid var(--border-color);
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: -3px 4px 5px var(--border-color), 4px 05px 5px var(--border-color);
+}
+
+.job-card .card-subtitle {
+    font-weight: normal;
+}
+
+.badge-bg {
+    background-color: var(--border-color) !important;
+    font-weight: normal;
+    border-radius: 0px;
+    color: var(--light-black-color);
+}
+
+.btn-default {
+    background-color: var(--link-color);
+    border-color: var(--link-color);
+}
+
+.btn-default:hover {
+    background-color: var(--link-color-hovered);
+    border-color: var(--link-color-hovered);
+}
+
+.post-job-btn {
+    background-color: white;
+    border-color: white;
+    color: var(--black-color);
+}
+
+.post-job-btn:hover {
+    background-color: var(--link-color);
+    border-color: var(--link-color);
     color: white;
 }

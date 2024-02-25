@@ -1,6 +1,8 @@
-import { Badge, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { BsClock } from "react-icons/bs";
 import DisplayCard from "../../components/DisplayCard";
+import JobCategory from "../../components/JobCategory";
+import { getDaysLeft } from "../../util";
 
 const jobList = [
     {
@@ -29,12 +31,13 @@ const JobListDisplay = () => {
                     </div>
                     <div>
                         <Card.Text>
-                            <Badge>{job.category}</Badge>
+                            <JobCategory category={job.category} />
                         </Card.Text>
                     </div>
                 </div>
-                <Card.Subtitle>{job.companyName}</Card.Subtitle>
+                <Card.Subtitle className="mb-2 text-muted">{job.companyName}</Card.Subtitle>
                 <BsClock />
+                <small className="text-muted ms-2">{getDaysLeft(job.expiresAt)}</small>
             </DisplayCard>
         )
     })

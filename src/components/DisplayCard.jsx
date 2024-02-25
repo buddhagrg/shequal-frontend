@@ -2,7 +2,7 @@ import { Card } from "react-bootstrap"
 
 const DisplayCard = (props) => {
     return (
-        <Card>
+        <Card className="job-card">
             <Card.Body>{props.children}</Card.Body>
         </Card>
     )
