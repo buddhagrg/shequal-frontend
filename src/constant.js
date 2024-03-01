@@ -8,3 +8,5 @@ export const JOB_CATEGORIES = [
     { value: "HEALTH_CARE", label: "Health Care" },
     { value: "OTHER", label: "Other" }
 ];
+
+export const API_BASE_URL = 'http://localhost:8080/api/v1/jobs';

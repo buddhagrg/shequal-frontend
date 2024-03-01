@@ -7,7 +7,7 @@ const Search = (props) => {
     const searchJob = props.searchJob;
 
     return (
-        <Container className="search-container-root">
+        <Container>
             <Row className="search-container">
                 <Col xs="12" lg="5" className="mb-1 mb-md-0">
                     <Form.Control

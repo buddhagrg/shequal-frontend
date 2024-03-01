@@ -3,31 +3,18 @@ import { BsClock } from "react-icons/bs";
 import DisplayCard from "../../components/DisplayCard";
 import JobCategory from "../../components/JobCategory";
 import { getDaysLeft } from "../../util";
+import { Link } from "react-router-dom";
 
-const jobList = [
-    {
-        id: 1,
-        title: "ReactJs developer",
-        companyName: "IT Deurali Inc. Pvt. Ltd.",
-        expiresAt: "2024-03-24T00:00:00",
-        category: "PROGRAMMING"
-    },
-    {
-        id: 2,
-        title: "Java Senior developer",
-        companyName: "IT Deurali Inc. Pvt. Ltd.",
-        expiresAt: "2024-04-24T00:00:00",
-        category: "PROGRAMMING"
-    },
-];
-
-const JobListDisplay = () => {
+const JobListDisplay = (props) => {
+    const jobList = props.jobList;
     return jobList.map(job => {
         return (
             <DisplayCard key={job.id}>
                 <div className="d-flex">
                     <div className="me-auto">
-                        <Card.Title>{job.title}</Card.Title>
+                        <Card.Title>
+                            <Link to={`/viewjobdetail/${job.id}`} className="job-list-title-link">{job.title}</Link>
+                        </Card.Title>
                     </div>
                     <div>
                         <Card.Text>
