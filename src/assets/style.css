@@ -83,3 +83,21 @@
     text-decoration: none;
     color: var(--black-color);
 }
+
+.form-control {
+  line-height:2.5;
+}
+
+.form-select {
+  line-height: 2.5;
+}
+
+.ql-container {
+  height: 30vh;
+}
+
+.postjob-container {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 15px;
+}
