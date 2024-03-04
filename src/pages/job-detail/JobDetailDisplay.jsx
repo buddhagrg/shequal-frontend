@@ -15,8 +15,9 @@ const JobDetailDisplay = ({ data }) => {
   const applyJob = () => {
     window.alert('job applied!');
   }
-  const handleUpdate = () => {
-    console.log('handle update clicked')
+  const handleUpdate = (event) => {
+    event.preventDefault();
+    navigate(`/updatejob/${id}`, { state: { jobDetails: data } })
   }
   const handleDelete = async (event) => {
     event.preventDefault();

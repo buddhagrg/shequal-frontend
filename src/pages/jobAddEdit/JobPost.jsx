@@ -97,6 +97,7 @@ const JobPost = () => {
           handleSubmit={handlePost}
           errors={errors}
           handleDescription={handleDescription}
+          buttonText="Post"
         />
       </Container>
     </>

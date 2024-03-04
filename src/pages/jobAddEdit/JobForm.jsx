@@ -2,7 +2,7 @@ import { Form, Row, Col, Button } from "react-bootstrap";
 import InputField from "../../components/InputField";
 import { JOB_CATEGORIES } from "../../constant";
 
-const JobForm = ({ formData, handleChange, handleSubmit, errors, handleDescription }) => {
+const JobForm = ({ formData, handleChange, handleSubmit, errors, handleDescription, buttonText }) => {
   const { title, description, category, expiresAt, companyName } = formData;
   return (
     <Form onSubmit={handleSubmit}>
@@ -76,7 +76,7 @@ const JobForm = ({ formData, handleChange, handleSubmit, errors, handleDescripti
       />
 
       <Button type="submit" size="lg">
-        Post
+        {buttonText}
       </Button>
 
     </Form>
