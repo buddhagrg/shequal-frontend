@@ -48,7 +48,7 @@ const JobDetailDisplay = ({ data }) => {
           </div>
           <Card.Subtitle className="mb-2 text-muted">{companyName}</Card.Subtitle>
           <hr />
-          <Card.Text>{parse(description)}</Card.Text>
+          <div>{parse(description)}</div>
         </DisplayCard>
       </Col>
       <Col xs={12} md={4}>
